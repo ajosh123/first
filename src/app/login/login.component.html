@@ -1,0 +1,20 @@
+<h3>{{data}}</h3>
+<div class="">
+    <div class="w-100 container mt-5 ms-5 row">
+        <div class="col-6 bg-danger  "> <div class="w-50 ms-5 mt-5 "><form>
+            <div class="mb-3 ">
+                
+                <input (change)="acnoChange($event)" name="uname" type="text" class="form-control" id="u1" [placeholder]="pdata">
+               
+            </div>
+            <div class="mb-3 ">
+                
+                <input #psw type="password" class="form-control" id="p1" placeholder="password">
+            </div>
+           
+            <button (click)="login(psw)" type="submit" class="btn btn-primary ">sign up</button>
+            <a routerLink="register">create account?</a>
+        </form></div></div>
+      <div class="col-6 mt-5"><img src="https://i.postimg.cc/1tjJX9pt/bank.jpg" alt=""> </div>
+    </div>
+</div>
